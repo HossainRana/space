@@ -1,0 +1,358 @@
+/*second section*/
+.secondSection{
+    padding: 5rem;
+}
+.secondSection .mainTitle{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120.02%;
+    color: #16161A;
+
+    width: 70%;
+    padding-bottom: 1rem;
+}
+
+.maininfo{
+    display: flex;
+    gap: 15%;
+}
+
+.infocontainer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem 0rem;
+    
+    width: 45%;
+}
+.infocontainer1 .description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 149%;
+    color: rgba(22, 22, 26, 0.67);
+}
+.infocontainer1 .dollarvalue{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120.02%;
+    color: #16161A;
+}
+.roundinfoicon{
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    background: yellow;
+    background-image: url(../images/help_icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dollar{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 3rem;
+}
+.infocontainer2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    width: 40%;
+}
+
+.infoitem{
+    display: flex;
+    align-items: center;
+}
+
+.infoitem .infokey{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 143%;
+    color: #7F7751;
+
+    min-width: 60%;
+}
+
+.infoitem .infovalue{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 143%;
+    color: #000000;
+}
+
+.infocontainer2 .infoitem{
+    width: 100%;
+}
+
+
+/*third section*/
+.thirdSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+}
+.thirdSection .left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.thirdSection .right{
+    display: flex;
+    gap: 4rem;
+}
+.thirdSection .right{
+    max-width: 60%;
+}
+
+.thirdSection .title{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120.02%;
+    color: #16161A;
+}
+.thirdSection .description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 149%;
+    color: rgba(22, 22, 26, 0.67);
+}
+
+.checkitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+    height: 100%;
+}
+
+.checkcontainer{
+    display: inline-block;
+    max-width: 100px;
+}
+
+.checkitem .checkicon{
+    width: 88px;
+    height: 88px;
+    border: 2px solid #000000;
+    border-radius: 22px;
+}
+
+.checkitem .checkicon.selected{
+    background-color: #202124;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 88px;
+    height: 88px;
+    border: 2px solid #000000;
+    border-radius: 18px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #000000;
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    font-size: 48px;
+    color: white;
+    display: none;
+}
+
+.checkitem .checktitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 143%;
+    color: #000000;
+
+    margin-top: 1rem;
+}
+
+.checkitem .roundinfoicon{
+    margin: auto;
+}
+
+
+/*last section*/
+.lastSection{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 5rem;
+}
+
+.twocol{
+    display: flex;
+    gap: 6rem;
+}
+
+.twocol .userinfos{
+    width: 50%;
+}
+
+.lastSection .userinfos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.userinfos .infoquery{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 143%;
+    min-height: 50px;
+    color: #000000;
+}
+
+.userinfos .infospace{
+    margin: 0.5rem 1rem;
+}
+
+
+@media(max-width: 1280px) {
+    .secondSection .mainTitle {
+        width: inherit;
+    }
+    .twocol{
+      gap: 4rem;
+    }
+}
+@media(max-width: 960px) {
+  .secondSection, .thirdSection, .lastSection{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+    
+  .maininfo{
+    flex-direction: column;
+  }
+  .infocontainer1, .infocontainer2{
+    width: inherit;
+  }
+  .thirdSection{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .thirdSection .left, .thirdSection .right{
+    width: inherit;
+  }
+  .thirdSection .right{
+    max-width: inherit;
+    justify-content: space-evenly;
+  }
+  
+  .twocol{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .twocol .userinfos{
+    width: inherit;
+  }
+}
+@media(max-width: 768px) {
+  .secondSection .mainTitle, .infocontainer1 .dollarvalue {  
+    font-size: 32px;
+  }
+  
+  .thirdSection .title {
+    font-size: 36px;
+  }
+  .secondSection, .thirdSection, .lastSection{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  input[type="checkbox"] {
+    width: 64px;
+    height: 64px;
+  }
+  .checkitem .checktitle {
+    font-size: 12px;
+  }
+}
+@media(max-width: 640px) {
+  .secondSection .mainTitle, .infocontainer1 .dollarvalue{  
+    font-size: 20px;
+  }
+  .thirdSection .title {
+    font-size: 26px;
+  }
+  .secondSection{
+    padding: 3rem 2rem;
+  }
+  .mainTitle, .infocontainer1 .description{
+    text-align: center;
+  }
+  .infocontainer1, .dollar{
+    padding: 1rem 0rem;
+  }
+  .dollar{
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .roundinfoicon{
+    width: 30px;
+    height: 30px;
+  }
+  .infoitem .infokey ,.thirdSection .description, .infocontainer1 .description{
+    font-size: 12px;
+  }
+  .infoitem .infovalue {
+    font-size: 14px;
+  }
+  input[type="checkbox"] {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+  }
+  input[type="checkbox"]::after{
+    font-size: 24px;
+  }
+  .thirdSection .left{
+    gap: 1rem;
+  }
+  .userinfos .infoquery{
+    font-size: 12px;
+    min-height: inherit;
+  }
+  .userinfos input[type=text]{
+    font-size: 14px;
+  }
+}
+@media(max-width: 480px) {
+  
+}

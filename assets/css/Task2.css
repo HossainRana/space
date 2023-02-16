@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Kodchasan:wght@300&family=Work+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* ==========================Naver section====================  */
+
+.container {
+    margin-top: 20px;
+    max-width: 1250px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin: 20px 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_box img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 8px 1px rgb(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.nav_items {
+    margin-top: 12px;
+}
+
+.nav_items a {
+    font-size: 18px;
+    color: #535353;
+    padding: 0 10px;
+}
+
+section {
+    padding: 0px 20px;
+}
+
+
+/* ========================== section1 Start====================  */
+
+.section_1 {
+    max-width: 1250px;
+    padding: 60px 90px;
+    margin: 0 auto;
+    background: linear-gradient(#fff8d7, #fef4e7, #fef5e0);
+    border-radius: 20px;
+}
+
+.section_1_text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.scn1_right h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.scn1_right p {
+    margin-top: 20px;
+    color: #63605A;
+    max-width: 70%;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.scn1_right .md_650_show {
+    display: none;
+    color: #7F7751;
+}
+
+.scn1_right .price {
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.scn1_right .price img {
+    position: relative;
+    top: 3.9px;
+    left: 45px;
+    width: 26px;
+    cursor: pointer;
+}
+
+.scn1_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.scn1_left .name {
+    color: #7F7751;
+    margin-left: -40px;
+}
+
+.scn1_left .name p {
+    padding: 11.6px 0;
+    font-size: 14px;
+}
+
+.scn1_left .name_price {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.scn1_left .name_price h2 {
+    font-size: 18px;
+    padding: 9px 0;
+}
+
+.pup_up .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+.pup_up .contant {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 300px;
+    height: 280px;
+    background-color: #fff;
+    z-index: 2;
+    padding: 10px 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pup_up .contant button {
+    padding: 10px 50px;
+    border: none;
+    background-color: #D9D9D9;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px 0 20px 0px;
+}
+
+.pup_up .contant h5 {
+    line-height: 25px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.pup_up.active .overlay {
+    display: block;
+}
+
+.pup_up.active .contant {
+    transition: all .5s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* ========================== section2 Start====================  */
+
+.section_2 {
+    max-width: 1250px;
+    padding: 60px 90px;
+    margin: 40px auto;
+    background: linear-gradient(#fff8d7, #fef4e7, #fef5e0);
+    border-radius: 20px;
+}
+
+.section_2_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scn_2_right h1 {
+    font-size: 28px;
+}
+
+.scn_2_right p {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #63605A;
+}
+
+.scn_2_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #000000;
+    border-radius: 18px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #000000;
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+.input_box {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.input_box p {
+    margin: 20px 0;
+}
+
+.input_box img.detils {
+    margin-top: 28px;
+}
+
+.input_box img {
+    width: 25px;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.pup_up .contant h4 {
+    margin-top: 70px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.pup_up .contant h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.pup_up .contant h2 {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+/* ========================== section3 Start====================  */
+
+.section_3 {
+    max-width: 1250px;
+    padding: 60px 90px;
+    margin: 0 auto;
+    background: linear-gradient(#fff8d7, #fff8d7, #fef5e0);
+    border-radius: 20px;
+}
+
+.scn_3_tital h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.scn_3_tital p {
+    font-size: 13px;
+    color: #636158;
+    margin-bottom: 20px;
+}
+
+.from_box_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 50px;
+}
+
+.from_box_2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 50px;
+}
+
+.input_from_1 label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin: 15px 0 0 10px;
+}
+
+.input_from_1 button {
+    padding: 7px 35px;
+    background: none;
+    border-radius: 5px;
+    border: 1.5px solid #000;
+    font-weight: 600;
+    margin: 20px 0 0 28px;
+}
+
+.input_from_2 label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin: 10px 0 0 10px;
+}
+
+.input_from_2 textarea {
+    padding: 10px;
+    width: 350px;
+    height: 130px;
+    background: none;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    outline: none;
+    margin: 20px 0 0 28px;
+}
+
+.input_from_2 img {
+    width: 100px;
+    cursor: pointer;
+    margin: 15px 0 0 18px;
+}
+
+.input_video {
+    margin-top: 60px;
+}
+
+.input_video label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.input_video .video {
+    width: 100%;
+    height: 350px;
+    border: 2px dashed black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 10px;
+}
+
+.input_video .video img {
+    width: 60px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+}
+
+.input_video .video p {
+    text-align: center;
+    color: #7F7751;
+    font-size: 15px;
+    display: block;
+}
+
+.button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button .buton1 {
+    padding: 12px 30px;
+    background-color: #FEDD00;
+    font-weight: 600;
+    box-shadow: 1px 1px 8px 1px rgb(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button .buton1 i {
+    font-size: 13px;
+}
+
+.button .buton2 {
+    padding: 12px 30px;
+    background-color: black;
+    font-weight: 500;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.calander {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.calander p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.calander button {
+    padding: 15px 130px;
+    border: 1px solid black;
+    background: none;
+    color: #635F5E;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media(max-width:915px) {
+    /* ========================== section1 Reasponsive====================  */
+    .section_1 {
+        padding: 30px 60px;
+    }
+    .section_1_text {
+        display: block;
+    }
+    .scn1_right h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .scn1_right p {
+        text-align: center;
+        max-width: 100%;
+    }
+    .scn1_right .price {
+        margin-top: 15px;
+    }
+    .scn1_right .price img {
+        top: 10px;
+        left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+    .scn1_left {
+        margin-top: 40px;
+    }
+    .scn1_left .name {
+        margin-left: 0px;
+    }
+    .scn1_left .name_price {
+        margin-left: 0px;
+    }
+    /* ========================== section2 Reasponsive====================  */
+    .section_2_text {
+        display: block;
+    }
+    .scn_2_left {
+        margin-top: 40px;
+    }
+    .section_2 {
+        padding: 30px 60px;
+    }
+    /* ========================== section3 Reasponsive====================  */
+    .section_3 {
+        padding: 30px 60px;
+    }
+    .from_box_1 {
+        display: block;
+    }
+    .input_from_1 p {
+        margin-top: 20px;
+    }
+    .input_from_2 p {
+        margin-top: 20px;
+    }
+    .from_box_2 {
+        display: block;
+    }
+    .input_from_2 textarea {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+@media(max-width:640px) {
+    /* ========================== section1 Reasponsive====================  */
+    .section_1 {
+        padding: 20px 40px;
+    }
+    .scn1_right h1 {
+        font-size: 20px;
+    }
+    .scn1_right p {
+        display: none;
+    }
+    .scn1_right .md_650_show {
+        display: block;
+    }
+    .scn1_right .price {
+        margin-top: 15px;
+    }
+    .scn1_right .price img {
+        top: 10px;
+        left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+    .scn1_left {
+        margin-top: 40px;
+    }
+    .scn1_left .name {
+        margin-left: 0px;
+    }
+    .scn1_left .name_price {
+        margin-left: 50px;
+    }
+    /* ========================== section2 Reasponsive====================  */
+    input[type="checkbox"] {
+        width: 60px;
+        height: 60px;
+    }
+    .input_box p {
+        font-size: 10px;
+    }
+    .section_2 {
+        padding: 20px 40px;
+    }
+    /* ========================== section3 Reasponsive====================  */
+    .section_3 {
+        padding: 20px 40px;
+    }
+    .input_from_1 label {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .input_from_1 button {
+        margin: 25px 0px 0px 40%;
+    }
+    .input_from_2 textarea {
+        height: 120px;
+        margin: 25px 0 0 5px;
+    }
+    .input_from_2 img {
+        margin: 25px 0 0 35%;
+    }
+    .input_video label {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .input_video .video {
+        width: 100%;
+        height: 200px;
+        margin: 30px 0 0 5px;
+    }
+    .input_video .video img {
+        width: 50px;
+        margin-left: 10px;
+    }
+    .input_video .video p {
+        font-size: 13px;
+    }
+    .button .buton1 {
+        padding: 12px 35px;
+        margin-left: 5px;
+    }
+    .button .buton1 i {
+        font-size: 12px;
+    }
+    .button .buton2 {
+        margin: 20px 0 0 10px;
+    }
+    .calander {
+        margin-left: 10px;
+    }
+    .calander p {
+        margin-bottom: 30px;
+    }
+    .calander button {
+        padding: 15px 100px;
+    }
+}
+
+@media(max-width:430px) {
+    /* ========================== section1 Reasponsive====================  */
+    .section_1 {
+        padding: 20px 20px;
+    }
+    .logo_box img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .nav_items {
+        margin-top: 12px;
+    }
+    .nav_items a {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    .scn1_left .name {
+        margin-left: 0px;
+    }
+    .scn1_left .name p {
+        font-size: 13px;
+    }
+    .scn1_left .name_price {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .scn1_left .name_price h2 {
+        font-size: 15px;
+        padding: 10.3px 0;
+    }
+    /* ========================== section2 Reasponsive====================  */
+    input[type="checkbox"] {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    input[type="checkbox"]::after {
+        font-size: 20px;
+    }
+    .input_box {
+        margin: 0 10px;
+    }
+    .input_box p {
+        font-size: 11px;
+    }
+    .section_2 {
+        padding: 20px 20px;
+    }
+    .input_box img.detils {
+        margin-top: 20px;
+    }
+    /* ========================== section3 Reasponsive====================  */
+    .section_3 {
+        padding: 20px 20px;
+    }
+    .input_from_1 label {
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .input_from_2 label {
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .input_from_1 button {
+        margin: 25px 0px 0px 33%;
+        border-radius: 8px;
+    }
+    .input_from_2 textarea {
+        border-radius: 8px;
+        height: 110px;
+    }
+    .input_video {
+        margin-top: 30px;
+    }
+    .input_video label {
+        font-size: 13px;
+        margin-left: 2px;
+    }
+    .input_video .video {
+        height: 150px;
+    }
+    .input_video .video img {
+        margin-left: 14px;
+    }
+    .input_video .video p {
+        font-size: 12px;
+    }
+    .button .buton1 {
+        padding: 17px 30px;
+        font-size: 15px;
+    }
+    .button .buton2 {
+        padding: 18px 30px;
+        margin: 20px 0 0 10px;
+        font-size: 13px;
+    }
+    .calander {
+        margin-left: 10px;
+    }
+    .calander p {
+        margin-bottom: 25px;
+    }
+    .calander button {
+        padding: 15px 80px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*---------------------------------------new-css-13-01-2023--------------------------------------- */
+
+.input-div-text {
+    margin-top: 15px;
+}
+
+.input-div-text input {
+    width: 110px;
+    margin: 20px 0 0 28px;
+    display: block;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 7px 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.input-div-text input:focus {
+    outline: none;
+}
+
+.input_from_2 textarea {
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .input-div-text input {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,123 @@
+.top-section-div {
+    background-color: #FEDD00;
+    text-align: center;
+    margin-bottom: 90px;
+    padding: 25px 5px;
+}
+
+.top-section-inner-div {
+    display: flex;
+    align-items: center;
+    max-width: 732px;
+    margin: 0 auto;
+}
+
+.top-section-div h5 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 15%;
+    line-height: 143%;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.sliderPage.dropping_conent_item {
+    margin: 0px auto;
+    /* padding-bottom: 10%; */
+    margin-bottom: 5%;
+}
+.sliderPage {
+    width: 95%;
+    height: 250px;
+    border-radius: 15px;
+    /* background: linear-gradient(#2d0204, #54331e); */
+    /* background: url(../images/black.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.sliderPage .topSlider {
+    height: 40px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+.dropping_conent_item .topSlider {
+    padding: 30px;
+}
+
+.dropping_conent_item .setting {
+    margin-left: 8px;
+}
+.sliderPage .topSlider .topLeft {
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    /* background-color: #fdebd1;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sliderPage .cls-bike {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.sliderPage .bike-heading {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderPage .bike-content {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.3em;
+    color: #FFFFFF;
+}
+
+.sliderPage .bike-para {
+    letter-spacing: 0em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: 90%;
+    margin: 5px auto 0;
+}
+
+.sliderPage .topSlider .topleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.container.faq-section.mb-5 {
+    background: #FFF8D6;
+    padding: 4%;
+    border-radius: 3%;
+}

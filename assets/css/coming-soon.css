@@ -1,0 +1,112 @@
+.coming-soon-title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+/* .coming-soon-title,
+.coming-soon-sub-title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700 !important;
+	font-size: 46px !important;
+	line-height: 120% !important;
+	color: #000000;
+}
+
+.coming-soon-desc {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400 !important;
+	font-size: 16px !important;
+	line-height: 149% !important;
+	color: rgba(22, 22, 26, 0.67);
+} */
+
+@media screen and (max-width: 425px) {
+	.coming-soon-title {
+		margin-bottom: 10px;
+	}
+
+	/* .coming-soon-title,
+	.coming-soon-sub-title {
+		font-weight: 500 !important;
+		font-size: 18px !important;
+		line-height: 143% !important;
+	}
+
+	.coming-soon-desc {
+		font-family: 'Poppins';
+		font-weight: 500 !important;
+		font-size: 12px !important;
+		line-height: 143% !important;
+		color: #7F7751;
+	} */
+}
+
+.normal-text-anchor {
+	text-decoration: none;
+	color: #222;
+}
+
+.modal {
+	padding: 102px 22px;
+	border-radius: 30px;
+	max-width: 612px;
+}
+
+.modal .close-modal  {
+	background-image: url('../images/close-icon.svg') !important;
+	top: -65px !important;
+    right: -65px !important;
+    width: 65px !important;
+    height: 65px !important;
+}
+
+.modal .modal-title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size:  33px;
+	line-height: 35px;
+	color: #000000;
+	background-color: #D9D9D9;
+	border-radius: 15px;
+	padding: 18px 20px;
+	width: fit-content;
+	margin: auto;
+}
+
+.modal .modal-body {
+	margin-top: 20px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size:  33px;
+	line-height: 45px;
+	text-align: center;
+	color: #000000;
+}
+
+@media screen and (max-width: 425px) {
+	.modal {
+		padding: 62px 31px;
+	}
+
+	.modal .close-modal  {
+		top: -25px !important;
+	    right: -25px !important;
+	    width: 25px !important;
+	    height: 25px !important;
+	}
+
+	.modal .modal-title {
+		font-size:  13px;
+		padding: 0 15px;
+	}
+
+	.modal .modal-body {
+		margin-top: 20px;
+		font-size:  13px;
+		line-height: 32px;
+	}
+}

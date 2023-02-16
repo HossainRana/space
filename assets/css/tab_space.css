@@ -1,0 +1,142 @@
+
+.secondSection{
+    display: flex;
+    padding: 4rem 0px;
+}
+
+.mainTitle, .boxcontainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainTitle span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 148.02%;
+    color: #16161A;
+
+    margin: 0px 4rem;
+}
+
+.boxpart{
+    background: #3C0206;
+    border-radius: 20px;
+    width: 440px;
+    height: 440px;
+    position: relative;
+}
+
+.topdiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 36px;
+}
+
+.topdiv .leftvalue,.topdiv .rightvalue{
+    border-radius: 15px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+    padding: 4px 7px;
+}
+.topdiv .rightvalue{
+    background: #EBD746;
+}
+.topdiv .leftvalue {
+    background: #FDEBD1;
+}
+
+
+
+
+
+.bottomdiv{
+    background: #2A0205;
+    padding: 30px 36px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+}
+.bottomdiv .userimage{
+    width: 65px;
+    height: 65px;
+    border-radius: 9999px;
+    background-image: url(../images/dave.png);
+    background-size: cover;
+    background-position: center center;
+}
+.bottomdiv .title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F5FAFF;
+}
+@media(max-width: 1280px) {
+  
+}
+@media(max-width: 960px) {
+  .secondSection{
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .mainTitle, .boxcontainer{
+    width: 100%;
+    }
+    .mainTitle span{
+        text-align: center;
+        font-size: 32px;
+    }
+}
+@media(max-width: 768px) {
+    .mainTitle span{
+        font-size: 24px;
+    }
+}
+@media(max-width: 640px) {
+ 
+}
+@media(max-width: 480px) {
+    .mainTitle span{
+        font-size: 18px;
+    }
+    .secondSection{
+        gap: 2rem;
+    }
+ .boxpart{
+    width: 282px;
+    height: 282px;
+ } 
+ .bottomdiv .userimage{
+    width: 36px;
+    height: 36px;
+ }
+ .bottomdiv .title{
+    font-size: 14px;
+ }
+ .topdiv{
+    padding: 17px 20px;
+ }
+ .bottomdiv{
+    padding: 14px 15px;
+ }
+ .secondSection{
+    padding: 3rem 0rem;
+ }
+}

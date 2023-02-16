@@ -1,0 +1,34 @@
+.show-hide {
+  /*display: none;*/
+}
+.modal_icon_placement {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+    z-index: 1;
+}
+@media (max-width:768px) {
+    .modal-content {
+        width: 100% !important;
+        height: 100vh !important;
+        
+    }
+    .modal {
+        padding-right:0px !important;
+        padding-left:0px !important;
+    }
+    .select_Address {
+        width:  100% !important;
+    }
+  .PopUpheader {
+    padding-left:22px !important;
+    padding-right:22px !important;
+  }
+  .show-hide {
+    display: block;
+  }
+  .modal_icon_placement {
+    flex-direction: column;
+  }
+    
+}
