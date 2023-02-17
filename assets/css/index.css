@@ -4541,7 +4541,7 @@ select .custom_address_box {
     margin: 0 auto;
 }
 .modal--mt{
-    margin-top: 6.4rem;
+    top: 100px;
 }
 
 /*@media (min-width: 426px)  {
