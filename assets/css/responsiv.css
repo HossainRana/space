@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: start;
     z-index: 1;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 @media (max-width:768px) {
     .modal-content {
